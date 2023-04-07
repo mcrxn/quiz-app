@@ -1,0 +1,11 @@
+<div class="container" *ngIf="user$ | async as user">
+  <div class="card card-body mt-3 text-center">
+    <h1>
+      {{ points$.value > 10 ? "Congrats" : "" }} {{ user.firstName }}
+      {{ user.lastName }}
+    </h1>
+    <h3>You have completed the Angular Quiz</h3>
+    <h5>Total Points: {{ points$ | async }}</h5>
+    <button class="btn" (click)="onStartAgain()">Start Again</button>
+  </div>
+</div>

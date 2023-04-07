@@ -1,0 +1,20 @@
+<div *ngIf="question$ | async as question" class="container">
+  <div class="card card-body mt-3">
+    <legend>
+      {{ question.question }}
+    </legend>
+    <h3>Timer: {{ questionTimer$ | async }}</h3>
+    <ul *ngFor="let option of question?.options" class="list-group">
+      <li
+        (click)="onSelect(option)"
+        class="list-group-item"
+        [ngClass]="{ active: option.text === (option$ | async)?.text }"
+      >
+        {{ option.text }}
+      </li>
+    </ul>
+    <button class="btn btn-primary" (click)="onAnswer(option$.value)">
+      Next
+    </button>
+  </div>
+</div>
