@@ -14,7 +14,7 @@ export class QuestionsService {
 
   selectedQuestion$ = new BehaviorSubject<number>(0);
 
-  questionTimer$ = new BehaviorSubject<number>(3);
+  questionTimer$ = new BehaviorSubject<number>(30);
 
   points$ = new BehaviorSubject<number>(0);
 
@@ -61,8 +61,8 @@ export class QuestionsService {
 
   changeQuestion() {
     this.selectedQuestion$.next(this.selectedQuestion$.value + 1);
-    this.questionTimer$.next(3);
-    if (this.selectedQuestion$.value === 7) {
+    this.questionTimer$.next(30);
+    if (this.selectedQuestion$.value === 10) {
       this.router.navigate(['result']);
     }
     this.option$.next(null);

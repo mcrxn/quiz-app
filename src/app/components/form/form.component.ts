@@ -42,7 +42,7 @@ export class FormComponent implements OnInit {
     this.userService.setUser(this.userForm.value);
     if (this.userForm.valid) {
       this.isFormValid.next(true);
-      this.questionsService.onQuizStart(3);
+      this.questionsService.onQuizStart(30);
     } else {
       this.isFormValid.next(false);
     }

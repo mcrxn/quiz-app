@@ -1,74 +1,139 @@
 [
   {
-    "question": "question 1",
+    "question": "What is the purpose of the NgModule decorator in Angular?",
     "options": [
-      { "text": "a", "correct": true },
-      { "text": "s" },
-      { "text": "d" },
-      { "text": "f" }
+      {
+        "text": "To declare components, directives, and pipes"
+      },
+      { "text": "To specify the dependencies of a module" },
+      { "text": "To provide services at the module level" },
+      { "text": "All of the above", "correct": true }
     ]
   },
   {
-    "question": "question 2",
+    "question": "What is the role of the async pipe in Angular?",
     "options": [
-      { "text": "1" },
-      { "text": "2", "correct": true },
-      { "text": "3" },
-      { "text": "4" }
+      {
+        "text": "To render an observable or promise in the template",
+        "correct": true
+      },
+      {
+        "text": "To subscribe to an observable or promise in a component"
+      },
+      { "text": "To handle errors from an observable or promise" },
+      { "text": "None of the above" }
     ]
   },
   {
-    "question": "question 3",
+    "question": "Which of the following is the correct syntax for two-way data binding in Angular?",
     "options": [
-      { "text": "1" },
-      { "text": "2", "correct": true },
-      { "text": "3" },
-      { "text": "4" }
+      {
+        "text": "[value]=\"property\" (input)=\"property=$event.target.value\""
+      },
+      { "text": "[(value)]=\"property\"", "correct": true },
+      {
+        "text": "[value]=\"property\" (output)=\"property=$event.target.value\""
+      },
+      {
+        "text": "[(value)]=\"property\" (change)=\"property=$event.target.value\""
+      }
     ]
   },
   {
-    "question": "question 4",
+    "question": "What is a directive in Angular?",
     "options": [
-      { "text": "1" },
-      { "text": "2", "correct": true },
-      { "text": "3" },
-      { "text": "4" }
+      { "text": "A reusable UI component" },
+      { "text": "A service that provides data to components" },
+      { "text": "A set of instructions to modify the DOM", "correct": true },
+      { "text": "A module that encapsulates related functionality" }
     ]
   },
   {
-    "question": "question 5",
+    "question": "What is a dependency injection in Angular?",
     "options": [
-      { "text": "1" },
-      { "text": "2" },
-      { "text": "3", "correct": true },
-      { "text": "4" }
+      {
+        "text": "A design pattern that allows for loosely coupled code",
+        "correct": true
+      },
+      { "text": "A way to create shared services and data between components" },
+      {
+        "text": "A technique for managing component lifecycles"
+      },
+      { "text": "A way to optimize the performance of the application" }
     ]
   },
   {
-    "question": "question 6",
+    "question": "What is the purpose of the ViewChild decorator in Angular?",
     "options": [
-      { "text": "1" },
-      { "text": "2", "correct": true },
-      { "text": "3" },
-      { "text": "4" }
+      {
+        "text": "To get a reference to a child component or directive",
+        "correct": true
+      },
+      {
+        "text": "To pass data from a parent component to a child component"
+      },
+      { "text": "To handle events emitted by a child component" },
+      { "text": "To add a child component or directive to the template" }
     ]
   },
   {
-    "question": "question 7",
+    "question": "What is the role of the ngIf directive in Angular?",
     "options": [
-      { "text": "1" },
-      { "text": "2" },
-      { "text": "3" },
-      { "text": "4", "correct": true }
+      {
+        "text": "To conditionally render a component or element in the template",
+        "correct": true
+      },
+      { "text": "To iterate over a collection and render each item" },
+      {
+        "text": "To apply a class or style to an element based on a condition"
+      },
+      { "text": "To emit an event when a condition is met" }
     ]
   },
   {
-    "question": "question 8",
+    "question": "Which of the following is a correct way to add routing to an Angular application?",
     "options": [
-      { "text": "1" },
-      { "text": "2" },
-      { "text": "3", "correct": true },
-      { "text": "4" }
+      { "text": "Define routes in the @NgModule decorator of the root module" },
+      { "text": "Define routes in the @Component decorator of each component" },
+      {
+        "text": "Define routes in a separate routing module and import it into the root module",
+        "correct": true
+      },
+      {
+        "text": "Define routes in a separate service and inject it into each component"
+      }
+    ]
+  },
+  {
+    "question": "What is the purpose of the ngClass directive in Angular?",
+    "options": [
+      {
+        "text": "To conditionally add or remove a class from an element based on a condition",
+        "correct": true
+      },
+      { "text": "To style an element based on a condition using CSS" },
+      {
+        "text": "To add or remove an element from the DOM based on a condition"
+      },
+      {
+        "text": "To bind a property to a component property using two-way data binding"
+      }
+    ]
+  },
+  {
+    "question": "What is the difference between a template-driven form and a reactive form in Angular?",
+    "options": [
+      {
+        "text": "A template-driven form is created using a template, while a reactive form is created programmatically"
+      },
+      {
+        "text": "A template-driven form is easier to implement, while a reactive form is more powerful"
+      },
+      {
+        "text": "A template-driven form is suitable for simple forms, while a reactive form is suitable for complex forms",
+        "correct": true
+      },
+      { "text": "All of the above" }
     ]
   }
 ]
